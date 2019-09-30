@@ -11,9 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'UrlController@index');
+
+Route::get('/url/{url}/edit', 'UrlController@edit');
+Route::patch('/url/{url}', 'UrlController@update');
 
 Route::get('/url/import', 'UrlController@import');
 Route::post('/url/import_parse', 'UrlController@parseImport');
