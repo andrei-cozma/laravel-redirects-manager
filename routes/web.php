@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/url/import', 'UrlController@importForm');
+Route::post('/url/import-save', 'UrlController@importSave');
