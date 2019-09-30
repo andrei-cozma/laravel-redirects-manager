@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateUrlsTable extends Migration
+class CreateImportUrlsTempTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,9 @@ class CreateUrlsTable extends Migration
      */
     public function up()
     {
-        Schema::create('urls', function (Blueprint $table) {
+        Schema::create('import_urls_temp', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->text('old_url');
-            $table->text('new_url')->nullable();
+            $table->text('url');
             $table->timestamps();
         });
     }
@@ -28,6 +27,6 @@ class CreateUrlsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('urls');
+        Schema::dropIfExists('import_urls_temp');
     }
 }
