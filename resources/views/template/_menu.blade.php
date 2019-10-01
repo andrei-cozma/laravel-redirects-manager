@@ -19,5 +19,6 @@
                 </div>
             </li>
         </ul>
+        <a href="/generate" class="btn btn-outline-primary ml-auto">Generate</a>
     </div>
 </nav>

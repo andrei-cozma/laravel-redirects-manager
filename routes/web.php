@@ -21,3 +21,5 @@ Route::patch('/url/{url}', 'UrlController@update');
 Route::get('/url/import', 'UrlController@import');
 Route::post('/url/import_parse', 'UrlController@parseImport');
 Route::post('/url/import_process', 'UrlController@processImport');
+
+Route::get('/generate', 'GenerateController');
