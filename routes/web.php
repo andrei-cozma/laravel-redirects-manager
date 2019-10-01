@@ -11,15 +11,15 @@
 |
 */
 
-Route::get('/', 'UrlController@index');
+Route::get('/', 'IndexController');
 
-Route::view('/url/create', 'create');
-Route::post('/url', 'StoreController');
-Route::get('/url/{url}/edit', 'UrlController@edit');
-Route::patch('/url/{url}', 'UrlController@update');
+Route::view('/create', 'create');
+Route::post('/', 'StoreController');
+Route::get('/{url}/edit', 'EditController');
+Route::patch('/{url}', 'UpdateController');
 
-Route::get('/url/import', 'UrlController@import');
-Route::post('/url/import_parse', 'UrlController@parseImport');
-Route::post('/url/import_process', 'UrlController@processImport');
+Route::view('/import', 'import');
+Route::post('/import_parse', 'ParseImportController');
+Route::post('/import_store', 'StoreImportController');
 
 Route::get('/generate', 'GenerateController');

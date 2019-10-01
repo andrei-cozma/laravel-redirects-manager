@@ -7,7 +7,7 @@
     <div class="row mt-4">
         <div class="col">
             <div class="card p-4">
-                <form action="/url/import_parse" method="post" enctype="multipart/form-data">
+                <form action="/import_parse" method="post" enctype="multipart/form-data">
                     <div class="row">
                         <div class="col">
                             <div class="form-group">

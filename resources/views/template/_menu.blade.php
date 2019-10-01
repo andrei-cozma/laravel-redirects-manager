@@ -14,8 +14,8 @@
                     Urls
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="/url/create">Create</a>
-                    <a class="dropdown-item" href="/url/import">Import</a>
+                    <a class="dropdown-item" href="/create">Create</a>
+                    <a class="dropdown-item" href="/import">Import</a>
                 </div>
             </li>
         </ul>

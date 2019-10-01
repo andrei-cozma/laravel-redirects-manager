@@ -30,7 +30,7 @@
                                 <td>{{ $url->new_url }}</td>
                                 <td>{{ $url->created_at }}</td>
                                 <td>{{ $url->updated_at }}</td>
-                                <td><a href="/url/{{ $url->id }}/edit">edit</a></td>
+                                <td><a href="/{{ $url->id }}/edit">edit</a></td>
                             </tr>
                         @endforeach
                         </tbody>

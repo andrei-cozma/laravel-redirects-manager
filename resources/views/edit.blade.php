@@ -16,7 +16,7 @@
         <div class="col-6">
             <div class="card" style="height: 100%;">
                 <div class="card-body">
-                    <form action="/url/{{ $url->id }}" method="post">
+                    <form action="/{{ $url->id }}" method="post">
                         @method('patch')
                         @csrf
                         <label>New url</label>
@@ -26,7 +26,7 @@
                                 <button type="submit" name="action" value="save" class="btn btn-primary">Save</button>
                                 @if($next)
                                     <button type="submit" name="action" value="save_and_next" class="btn btn-primary">Save & Next</button>
-                                    <a href="/url/{{ $next }}/edit" class="btn btn-primary">Next</a>
+                                    <a href="/{{ $next }}/edit" class="btn btn-primary">Next</a>
                                 @endif
                                 <a href="/" class="btn btn-primary float-right">Cancel</a>
                             </div>

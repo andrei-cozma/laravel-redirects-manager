@@ -20,7 +20,7 @@
                 </table>
                 <div class="row">
                     <div class="col col-sm-2">
-                        <form action="/url/import_process" method="post">
+                        <form action="/import_store" method="post">
                             <button type="submit" class="btn btn-primary">Import</button>
                             @csrf
                         </form>

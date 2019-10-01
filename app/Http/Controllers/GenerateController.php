@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Url;
-use Illuminate\Http\Request;
 
 class GenerateController extends Controller
 {

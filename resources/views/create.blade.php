@@ -10,7 +10,7 @@
                     <h3>Create Redirect</h3>
                 </div>
                 <div class="card-body">
-                    <form action="/url" method="post">
+                    <form action="/" method="post">
                         @csrf
                         <div class="form-group">
                             <label for="old_url">Old Url</label>
