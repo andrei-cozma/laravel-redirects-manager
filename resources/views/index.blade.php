@@ -6,6 +6,9 @@
     <div class="row mt-4">
         <div class="col">
             <div class="card">
+                <div class="card-header">
+                    <h3>Redirects List</h3>
+                </div>
                 <div class="card-body">
                     <table class="table table-stripped">
                         <thead>

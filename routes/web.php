@@ -13,6 +13,8 @@
 
 Route::get('/', 'UrlController@index');
 
+Route::view('/url/create', 'create');
+Route::post('/url', 'StoreController');
 Route::get('/url/{url}/edit', 'UrlController@edit');
 Route::patch('/url/{url}', 'UrlController@update');
 

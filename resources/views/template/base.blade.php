@@ -11,6 +11,8 @@
 </head>
 <body>
 
+@include('template._menu')
+
 <div class="container">
     @yield('content')
 </div>
