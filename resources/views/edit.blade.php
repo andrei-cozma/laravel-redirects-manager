@@ -32,6 +32,7 @@
                             </div>
                         </div>
                     </form>
+                    <iframe src="{{ $url->new_url }}" style="border: none;" class="my-2" width="100%" height="800"></iframe>
                 </div>
             </div>
         </div>
